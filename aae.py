@@ -217,6 +217,7 @@ class SemiSupervisedAdversarialAutoencoder(nn.Module):
         prior_std=5.0,
         add_gaussian_noise=False,
         train_unlabeled_loader=None,
+        save_interval=100
     ):
         os.makedirs(result_folder, exist_ok=True)
         with open(f'{result_folder}/train_log.csv', 'w', newline='') as f:
@@ -398,7 +399,7 @@ class SemiSupervisedAdversarialAutoencoder(nn.Module):
                     total   += vy.size(0)
             print(f"Validation Accuracy: {100*correct/total:.2f}%\n")
 
-            if (epoch+1) % 50 == 0:
+            if (epoch+1) % save_interval == 0:
                 ckpt_dir = f'{result_folder}/weights_epoch_{epoch+1}'
                 os.makedirs(ckpt_dir, exist_ok=True)
                 self.save_weights(f'{ckpt_dir}/weights')
