@@ -1,5 +1,10 @@
 # Adverserial Autoencoders (Semi-Supervised)
 
+![image](https://github.com/user-attachments/assets/02544093-bdfc-4d98-a1df-aad4d8c9e71f)
+
+*Makhzani, A., Shlens, J., Jaitly, N., Goodfellow, I., & Frey, B. (2016).** Adversarial Autoencoders. *arXiv preprint arXiv:1511.05644*. [https://arxiv.org/abs/1511.05644](https://arxiv.org/abs/1511.05644)
+
+---
 A PyTorch implementation of a **semi-supervised Adversarial Autoencoder (AAE)**, with example experiments on MNIST.  
 The AAE learns a low-dimensional latent representation split into  
 - a **categorical** part for class labels, and  
