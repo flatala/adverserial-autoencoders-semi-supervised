@@ -1,7 +1,7 @@
 # Adverserial Autoencoders (Semi-Supervised)
+-----
 
-![image](https://github.com/user-attachments/assets/02544093-bdfc-4d98-a1df-aad4d8c9e71f)
-
+![image](https://github.com/user-attachments/assets/5cb9abc1-d665-42b7-9477-f85cecd52f3d)
 *Makhzani, A., Shlens, J., Jaitly, N., Goodfellow, I., & Frey, B. (2016).** Adversarial Autoencoders. *arXiv preprint arXiv:1511.05644*. [https://arxiv.org/abs/1511.05644](https://arxiv.org/abs/1511.05644)
 
 ---
