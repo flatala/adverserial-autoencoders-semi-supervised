@@ -87,3 +87,15 @@ model.train_mbgd(
     train_unlabeled_loader=train_unlabeled_loader,
     save_interval=100
 )
+```
+
+## Project Collaborators
+This codebase is the part of the code that I implemended for a group project at TU Delft for the **Generative Modelling - DSAIT4030** course.
+The collaborators in the project were:
+
+- Goos, Rowdey (TU Delft)
+- Łodziński, Maciej (TU Delft)
+- Latała, Franciszek (Me) (TU Delft)
+- Page, Henry (TU Delft)
+- Savvidi, Danae (TU Delft)
+
