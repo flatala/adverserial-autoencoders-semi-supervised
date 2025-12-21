@@ -6,9 +6,13 @@
 
 ---
 A PyTorch implementation of a **semi-supervised Adversarial Autoencoder (AAE)**, with example experiments on MNIST.  
-The AAE learns a low-dimensional latent representation split into  
+
+The AAE learns a low-dimensional latent representation split into:
 - a **categorical** part for class labels, and  
-- a **continuous** part for “style.”  
+- a **continuous** part for “style.”
+  
+A report discussing the re-implementation results (including how closely it matches the original authors’ results) and additional experiments can be found [here](aaes_semi_supervised.pdf).
+
 ---
 
 ## 📦 Requirements
