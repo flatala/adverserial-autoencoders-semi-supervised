@@ -38,7 +38,7 @@ We can see variation in the sampled images for each digit class. The disentangle
 </tr>
 </table>
 
-With all labeled samples, the fidelity of generation is higher, but the style variation seems to be less relevant - the model relies more on labels and less on learning meaningful style representations. Note that with cycling of unlabeled samples for the reconstruction phase, using all labeled samples for 500 epochs means the model actually sees more data than in the 2000 epochs experiment, so it's likely somewhat overfitted.
+With all labeled samples, the fidelity of generation is higher, but the style variation seems to be slightly less relevant than in the semi-supervised case - the model relies more on labels and less on learning meaningful style representations. Note that with cycling of unlabeled samples for the reconstruction phase, using all labeled samples for 500 epochs means the model actually sees more data than in the 2000 epochs experiment.
 
 ## Installation
 
