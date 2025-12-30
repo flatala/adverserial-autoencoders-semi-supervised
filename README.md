@@ -40,9 +40,16 @@ We can see variation in the sampled images for each digit class. The disentangle
 
 With all labeled samples, the fidelity of generation is higher, but the style variation seems to be less relevant - the model relies more on labels and less on learning meaningful style representations. Note that with cycling of unlabeled samples for the reconstruction phase, using all labeled samples for 500 epochs means the model actually sees more data than in the 2000 epochs experiment, so it's likely somewhat overfitted.
 
-## 📦 Requirements
+## Installation
 
-Install with:
+Clone the repo:
+
+```bash
+git clone https://github.com/flatala/adverserial-autoencoders-semi-supervised.git
+cd adverserial-autoencoders-semi-supervised
+```
+
+Install requirements with:
 
 ```bash
 pip install -r requirements.txt
@@ -63,16 +70,7 @@ Key dependencies:
 - `tqdm`
 
 
-## 🚀 Installation
-
-```bash
-git clone https://github.com/flatala/adverserial-autoencoders-semi-supervised.git
-cd adverserial-autoencoders-semi-supervised
-pip install -r requirements.txt
-```
-
-
-## 📝 Usage
+## Usage
 
 ### 1. Define model options
 
