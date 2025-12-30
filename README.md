@@ -1,5 +1,4 @@
 # Adverserial Autoencoders (Semi-Supervised)
------
 
 ![image](https://github.com/user-attachments/assets/5cb9abc1-d665-42b7-9477-f85cecd52f3d)
 *Makhzani, A., Shlens, J., Jaitly, N., Goodfellow, I., & Frey, B. (2016).** Adversarial Autoencoders. *arXiv preprint arXiv:1511.05644*. [https://arxiv.org/abs/1511.05644](https://arxiv.org/abs/1511.05644)
@@ -11,9 +10,35 @@ The AAE learns a low-dimensional latent representation split into:
 - a **categorical** part for class labels, and  
 - a **continuous** part for “style.”
   
-A report discussing the re-implementation results (including how closely it matches the original authors’ results) and additional experiments can be found [here](aaes_semi_supervised.pdf).
+A report discussing the re-implementation results (including how closely it matches the original authors' results) and additional experiments can be found here:
 
----
+**[AAE Semi-Supervised Report (PDF)](aae_semisupervised_report.pdf)**
+
+
+## Training Results
+The model was trained on the MNIST dataset of handwritten digits.
+
+**2000 epochs, 2000 labeled samples:**
+
+<table>
+<tr>
+<td><img src="results_2000_epochs_2000_labeled_samples/digits_0_to_9_2000_samples.png" width="400"/></td>
+<td><img src="results_2000_epochs_2000_labeled_samples/style_disentanglement_2000_samples.png" width="400"/></td>
+</tr>
+</table>
+
+We can see variation in the sampled images for each digit class. The disentanglement plot shows how fixing other dimensions and sampling over two of the latent style dimensions on a grid leads to smooth variation across the styles of the digits.
+
+**500 epochs, all labeled samples:**
+
+<table>
+<tr>
+<td><img src="results_500_epochs_all_labeled_samples/digits_0_to_9_all_samples.png" width="400"/></td>
+<td><img src="results_500_epochs_all_labeled_samples/style_disentanglement_all_samples.png" width="400"/></td>
+</tr>
+</table>
+
+With all labeled samples, the fidelity of generation is higher, but the style variation seems to be less relevant - the model relies more on labels and less on learning meaningful style representations. Note that with cycling of unlabeled samples for the reconstruction phase, using all labeled samples for 500 epochs means the model actually sees more data than in the 2000 epochs experiment, so it's likely somewhat overfitted.
 
 ## 📦 Requirements
 
@@ -37,7 +62,6 @@ Key dependencies:
 - `ipykernel >= 6.29.5, < 7.0.0`  
 - `tqdm`
 
----
 
 ## 🚀 Installation
 
@@ -47,7 +71,6 @@ cd adverserial-autoencoders-semi-supervised
 pip install -r requirements.txt
 ```
 
----
 
 ## 📝 Usage
 
