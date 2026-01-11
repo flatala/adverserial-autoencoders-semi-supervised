@@ -18,7 +18,7 @@ The repository includes the following code and documents:
 
 
 ## Training Results
-The model was trained on the MNIST dataset of handwritten digits.
+The model was trained on the MNIST dataset of handwritten digits. Below you can find a comparison of images generated using the model when trained semi-supervised and fully supervised.
 
 **2000 epochs, 2000 labeled samples:**
 
