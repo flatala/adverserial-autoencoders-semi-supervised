@@ -17,10 +17,10 @@ The repository includes the following code and documents:
 - A report covering the reproduction results and additional experiments: **[AAE Semi-Supervised Report (PDF)](aae_semisupervised_report.pdf)**
 
 
-## Training Results
+## Generation Results
 The model was trained on the MNIST dataset of handwritten digits. Below you can find a comparison of images generated using the model when trained semi-supervised and fully supervised.
 
-**2000 epochs, 2000 labeled samples:**
+**Trained for 2000 epochs, using 2000 labeled samples:**
 
 <table>
 <tr>
@@ -31,7 +31,7 @@ The model was trained on the MNIST dataset of handwritten digits. Below you can 
 
 We can see variation in the sampled images for each digit class. The disentanglement plot shows how fixing other dimensions and sampling over two of the latent style dimensions on a grid leads to smooth variation across the styles of the digits.
 
-**500 epochs, all labeled samples:**
+**Trained for 500 epochs, with all samples labeled:**
 
 <table>
 <tr>
